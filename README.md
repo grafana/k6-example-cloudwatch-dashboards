@@ -1,13 +1,9 @@
-# Amazon CloudWatch Dashboards for k6
+# Amazon CloudWatch Dashboard for k6
 
-This repository holds the Amazon CloudWatch dashboard exports that can be used for k6 result visualization.
+This repository includes an Amazon CloudWatch dashboard to visualize k6 results.
+
+⚠️ Please note: Starting from v0.47.0, new k6 releases no longer include the  [`CloudWatch(StatsD) output`](https://grafana.com/docs/k6/latest/results-output/real-time/amazon-cloudwatch/). However, you can still use this feature as its development continues in the [LeonAdato/xk6-output-statsd extension](https://github.com/LeonAdato/xk6-output-statsd).
 
 ![Amazon CloudWatch dashboard for k6](./images/cloudwatch-k6-dashboard.png)
 
-You can use the `dashboard.json` file to create the above dashboard. Just replace **REGION** and **ADDRESS** with relevant information from your environment, that is, the AWS region(s) and the private IP address of the EC2 instance.
-
-For more information, please visit [Amazon CloudWatch](https://k6.io/docs/results-visualization/amazon-cloudwatch) result visualization article.
-
-## Contribution
-
-We'd be happy to see your awesome dashboards. If you like, either fork the repository and send a PR, or just open an issue.
+You can use the [`dashboard.json`](./dashboard.json) file to create the above dashboard. Please replace **REGION** and **ADDRESS** with the information from your environment, the AWS region(s) and the private IP address of the EC2 instance respectively.
